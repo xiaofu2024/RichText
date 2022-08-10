@@ -2,16 +2,23 @@
 
 buildscript {
     repositories {
-        jcenter()
         maven {
-            url 'https://maven.google.com/'
-            name 'Google'
+            url 'http://192.168.31.21:8090/repository/maven-aliyun/'
+            allowInsecureProtocol = true
         }
+        maven {
+            url 'http://192.168.31.21:8090/repository/maven-central/'
+            allowInsecureProtocol = true
+        }
+        maven {
+            url 'http://192.168.31.21:8090/repository/maven-public/'
+            allowInsecureProtocol = true
+        }
+        mavenCentral()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.1'
-        classpath 'com.novoda:bintray-release:0.7.0'
-
+        classpath 'com.android.tools.build:gradle:7.2.1'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -19,19 +26,20 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
         maven {
-            url 'https://maven.google.com/'
-            name 'Google'
+            url 'http://192.168.31.21:8090/repository/maven-aliyun/'
+            allowInsecureProtocol = true
         }
-    }
-
-    tasks.withType(Javadoc) {
-        options {
-            encoding "UTF-8"
-            charSet 'UTF-8'
-            links "http://docs.oracle.com/javase/7/docs/api"
+        maven {
+            url 'http://192.168.31.21:8090/repository/maven-central/'
+            allowInsecureProtocol = true
         }
+        maven {
+            url 'http://192.168.31.21:8090/repository/maven-public/'
+            allowInsecureProtocol = true
+        }
+        mavenCentral()
+        google()
     }
 }
 

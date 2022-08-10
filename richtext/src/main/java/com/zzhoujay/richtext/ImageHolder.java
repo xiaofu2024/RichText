@@ -1,8 +1,8 @@
 package com.zzhoujay.richtext;
 
 import android.graphics.drawable.Drawable;
-import android.support.annotation.ColorInt;
-import android.support.annotation.IntDef;
+import androidx.annotation.ColorInt;
+import androidx.annotation.IntDef;
 import android.widget.TextView;
 
 import com.zzhoujay.richtext.drawable.DrawableBorderHolder;
