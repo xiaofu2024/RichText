@@ -1,6 +1,6 @@
-# RichText [ ![Download](https://api.bintray.com/packages/zzhoujay/maven/richtext/images/download.svg) ](https://bintray.com/zzhoujay/maven/richtext/_latestVersion)
+# RichText-AndroidX
 
-### 注意：此项目已不再维护
+### 注意：原项目作者意见不维护了，不支持AndroidX，此项目使用原作则代码改造为支持Androidx
 
 > Android平台下的富文本解析器
 
