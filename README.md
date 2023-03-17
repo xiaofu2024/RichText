@@ -1,6 +1,6 @@
 # RichText-AndroidX
 
-### 注意：原项目作者意见不维护了，不支持AndroidX，此项目使用原作者代码改造为支持Androidx
+### 注意：原项目作者已经不维护了，不支持AndroidX，此项目使用原作者代码改造为支持Androidx
 
 > Android平台下的富文本解析器
 
