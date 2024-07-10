@@ -24,18 +24,10 @@
 ![演示](image/image.jpg "演示")
 
 
-### gradle中引用的方法
+### 引入方法
+ 
+clone 该项目然后跑起来，打出 aar包然后引入自己的项目
 
-```
-implementation 'com.zzhoujay.richtext:richtext:latest-version'
-```
-
-### 使用新的Html解析器
-
-只需加入此依赖即可，无须其他操作，新Html解析器对原生Html解析器的功能做了补充
-```
-implementation 'com.zzhoujay:html:latest-version'
-```
 
 新Html解析器增加了对代码块的支持，代码块可以触发点击事件，通过`urlClick`设置，
 代码块回调的参数由`code://`开头
