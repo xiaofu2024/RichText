@@ -1,9 +1,10 @@
 package com.zzhoujay.richtext;
 
 import android.graphics.drawable.Drawable;
+import android.widget.TextView;
+
 import androidx.annotation.ColorInt;
 import androidx.annotation.IntDef;
-import android.widget.TextView;
 
 import com.zzhoujay.richtext.drawable.DrawableBorderHolder;
 import com.zzhoujay.richtext.exceptions.ResetImageSourceException;

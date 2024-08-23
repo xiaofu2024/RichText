@@ -26,5 +26,5 @@ android {
 dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.7.0'
 //    implementation project(':richtext')
-    implementation 'com.zzhoujay.richtext:richtext:3.0.1'
+    implementation 'com.zzhoujay.richtext:richtext:3.0.8'
 }

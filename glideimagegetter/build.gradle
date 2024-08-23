@@ -32,9 +32,9 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.2'
     implementation 'com.github.bumptech.glide:glide:3.7.0'
-    implementation 'com.zzhoujay.richtext:richtext:2.5.+'
+    implementation 'com.zzhoujay.richtext:richtext:3.0.8'
 //    implementation project(':richtext')
 }
 

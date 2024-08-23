@@ -7,7 +7,8 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import androidx.annotation.ColorInt;
-import androidx.core.util.Pair;
+
+import android.util.Pair;
 import android.widget.TextView;
 
 import com.zzhoujay.richtext.callback.Callback;
