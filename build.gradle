@@ -2,42 +2,19 @@
 
 buildscript {
     repositories {
-        maven {
-            url 'http://192.168.31.21:8090/repository/maven-aliyun/'
-            allowInsecureProtocol = true
-        }
-        maven {
-            url 'http://192.168.31.21:8090/repository/maven-central/'
-            allowInsecureProtocol = true
-        }
-        maven {
-            url 'http://192.168.31.21:8090/repository/maven-public/'
-            allowInsecureProtocol = true
-        }
         mavenCentral()
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.1'
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath 'com.android.tools.build:gradle:7.2.2'
     }
 }
 
 allprojects {
     repositories {
-        maven {
-            url 'http://192.168.31.21:8090/repository/maven-aliyun/'
-            allowInsecureProtocol = true
-        }
-        maven {
-            url 'http://192.168.31.21:8090/repository/maven-central/'
-            allowInsecureProtocol = true
-        }
-        maven {
-            url 'http://192.168.31.21:8090/repository/maven-public/'
-            allowInsecureProtocol = true
-        }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
         mavenCentral()
         google()
     }
