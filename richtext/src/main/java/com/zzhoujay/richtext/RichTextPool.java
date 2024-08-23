@@ -72,7 +72,7 @@ class RichTextPool {
         }
 
         LongClickableURLSpan[] lcus = ssb.getSpans(0, ssb.length(), LongClickableURLSpan.class);
-        if (lcus != null && lcus.length > 0) {
+        if (lcus != null) {
             for (LongClickableURLSpan span : lcus) {
                 int start = ssb.getSpanStart(span);
                 int end = ssb.getSpanEnd(span);

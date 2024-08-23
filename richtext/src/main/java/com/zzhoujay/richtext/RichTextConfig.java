@@ -520,28 +520,20 @@ public final class RichTextConfig {
             }
         };
 
-        private static final DrawableGetter PLACE_HOLDER_DRAWABLE_GETTER = new DrawableGetter() {
-
-            @Override
-            public Drawable getDrawable(ImageHolder holder, RichTextConfig config, TextView textView) {
-                ColorDrawable drawable = new ColorDrawable(Color.LTGRAY);
-                int width = textView.getWidth() ;
-                drawable.setBounds(0, 0, width, width / 2);
-                HANDLER.obtainMessage(SET_BOUNDS, Pair.create(drawable, textView)).sendToTarget();
-                return drawable;
-            }
+        private static final DrawableGetter PLACE_HOLDER_DRAWABLE_GETTER = (holder, config, textView) -> {
+            ColorDrawable drawable = new ColorDrawable(Color.LTGRAY);
+            int width = textView.getWidth() ;
+            drawable.setBounds(0, 0, width, width / 2);
+            HANDLER.obtainMessage(SET_BOUNDS, Pair.create(drawable, textView)).sendToTarget();
+            return drawable;
         };
 
-        private static final DrawableGetter ERROR_IMAGE_DRAWABLE_GETTER = new DrawableGetter() {
-
-            @Override
-            public Drawable getDrawable(ImageHolder holder, RichTextConfig config, TextView textView) {
-                ColorDrawable drawable = new ColorDrawable(Color.DKGRAY);
-                int width = textView.getWidth();
-                drawable.setBounds(0, 0, width, width / 2);
-                HANDLER.obtainMessage(SET_BOUNDS, Pair.create(drawable, textView)).sendToTarget();
-                return drawable;
-            }
+        private static final DrawableGetter ERROR_IMAGE_DRAWABLE_GETTER = (holder, config, textView) -> {
+            ColorDrawable drawable = new ColorDrawable(Color.DKGRAY);
+            int width = textView.getWidth();
+            drawable.setBounds(0, 0, width, width / 2);
+            HANDLER.obtainMessage(SET_BOUNDS, Pair.create(drawable, textView)).sendToTarget();
+            return drawable;
         };
 
         /**

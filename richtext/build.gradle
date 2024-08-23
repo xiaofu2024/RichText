@@ -2,12 +2,10 @@ apply plugin: 'com.android.library'
 
 
 android {
-    compileSdk 33
+    compileSdk 34
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 65
-        versionName "3.0.8"
     }
     buildTypes {
         release {
@@ -15,11 +13,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    lintOptions {
+    namespace 'com.zzhoujay.richtext'
+    lint {
         abortOnError false
-    }
-    dexOptions {
-        preDexLibraries = false
     }
 }
 
